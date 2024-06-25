@@ -1,0 +1,419 @@
+# Create a virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# Install Flask
+pip install Flask
+
+pip install -r requirements.txt
+
+https://themewagon.com/themes/free-bootstrap-5-html-5-seo-digital-marketing-website-template-onix/
+https://themewagon.github.io/onix/
+
+
+    <img src="{{ url_for('static', filename='assets/images/logo.png') }}" alt="Logo">
+
+
+        DATABASE: 'mongodb+srv://narreshgudimetlaa:NtNaEbKiIxts9T2T@cluster0.jzhpq7t.mongodb.net/crud',
+MONGODB ATLAS LOGIN:
+===================
+Mongodb login
+narresh.gudimetlaa@gmail.com
+Uzwall12578*
+===============
+FLASH MESSAGE:
+==============
+E:\Python-Training\Python-website\my_flask_app\templates\index.html
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+/* ====================== Flash Messages ====================================== */
+.flash-messages {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.flash {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.flash-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.flash-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+/* ====================== Flash Messages ====================================== */
+config.py:
+==========
+E:\Python-Training\Python-website\my_flask_app\config.py
+    SECRET_KEY = os.getenv('SECRET_KEY', '12345')
+
+index.html:
+==========
+
+<body>
+    <div class="container mt-4">
+     {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="flash flash-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </div>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                var flashMessages = document.querySelectorAll('.flash');
+                flashMessages.forEach(function (flash) {
+                    flash.style.opacity = '0';
+                    setTimeout(function() {
+                        flash.remove();
+                    }, 500); // Match this duration with the transition duration
+                });
+            }, 5000); // 5 seconds delay
+        });
+    </script>
+
+app.py:
+======
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
+            flash('All fields are required!', 'danger')
+            flash('Your details have been submitted successfully!', 'success')
+
+
+
+
+
+          <form id="contact" action="" method="get">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============================================================
+Microsoft Windows [Version 10.0.22621.3593]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Python-Training\Python-website\my_flask_app>code .
+
+E:\Python-Training\Python-website\my_flask_app>python -m venv venv
+
+E:\Python-Training\Python-website\my_flask_app>venv\Scripts\activate
+
+(venv) E:\Python-Training\Python-website\my_flask_app>pip install Flask
+Collecting Flask
+  Using cached flask-3.0.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting Werkzeug>=3.0.0 (from Flask)
+  Using cached werkzeug-3.0.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting Jinja2>=3.1.2 (from Flask)
+  Using cached jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.1.2 (from Flask)
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting click>=8.1.3 (from Flask)
+  Using cached click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting blinker>=1.6.2 (from Flask)
+  Using cached blinker-1.8.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting colorama (from click>=8.1.3->Flask)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->Flask)
+  Downloading MarkupSafe-2.1.5-cp312-cp312-win_amd64.whl.metadata (3.1 kB)
+Using cached flask-3.0.3-py3-none-any.whl (101 kB)
+Using cached blinker-1.8.2-py3-none-any.whl (9.5 kB)
+Using cached click-8.1.7-py3-none-any.whl (97 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.4-py3-none-any.whl (133 kB)
+Using cached werkzeug-3.0.3-py3-none-any.whl (227 kB)
+Downloading MarkupSafe-2.1.5-cp312-cp312-win_amd64.whl (17 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Installing collected packages: MarkupSafe, itsdangerous, colorama, blinker, Werkzeug, Jinja2, click, Flask
+Successfully installed Flask-3.0.3 Jinja2-3.1.4 MarkupSafe-2.1.5 Werkzeug-3.0.3 blinker-1.8.2 click-8.1.7 colorama-0.4.6 itsdangerous-2.2.0
+
+[notice] A new release of pip is available: 24.0 -> 24.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(venv) E:\Python-Training\Python-website\my_flask_app>
+=========================================================================
+
+(venv) E:\Python-Training\Python-website\my_flask_app>pip install -r requirements.txt
+Requirement already satisfied: Flask in e:\python-training\python-website\my_flask_app\venv\lib\site-packages (from -r requirements.txt (line 1)) (3.0.3)
+Collecting Flask-PyMongo (from -r requirements.txt (line 2))
+  Downloading Flask_PyMongo-2.3.0-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting dnspython (from -r requirements.txt (line 3))
+  Downloading dnspython-2.6.1-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: Werkzeug>=3.0.0 in e:\python-training\python-website\my_flask_app\venv\lib\site-packages (from Flask->-r requirements.txt (line 1)) (3.0.3)
+Requirement already satisfied: Jinja2>=3.1.2 in e:\python-training\python-website\my_flask_app\venv\lib\site-packages (from Flask->-r requirements.txt (line 1)) (3.1.4)
+Requirement already satisfied: itsdangerous>=2.1.2 in e:\python-training\python-website\my_flask_app\venv\lib\site-packages (from Flask->-r requirements.txt (line 1)) (2.2.0)
+Requirement already satisfied: click>=8.1.3 in e:\python-training\python-website\my_flask_app\venv\lib\site-packages (from Flask->-r requirements.txt (line 1)) (8.1.7)
+Requirement already satisfied: blinker>=1.6.2 in e:\python-training\python-website\my_flask_app\venv\lib\site-packages (from Flask->-r requirements.txt (line 1)) (1.8.2)
+Collecting PyMongo>=3.3 (from Flask-PyMongo->-r requirements.txt (line 2))
+  Downloading pymongo-4.7.3-cp312-cp312-win_amd64.whl.metadata (22 kB)
+Requirement already satisfied: colorama in e:\python-training\python-website\my_flask_app\venv\lib\site-packages (from click>=8.1.3->Flask->-r requirements.txt (line 1)) (0.4.6)
+Requirement already satisfied: MarkupSafe>=2.0 in e:\python-training\python-website\my_flask_app\venv\lib\site-packages (from Jinja2>=3.1.2->Flask->-r requirements.txt (line 1)) (2.1.5)
+Downloading Flask_PyMongo-2.3.0-py2.py3-none-any.whl (12 kB)
+Downloading dnspython-2.6.1-py3-none-any.whl (307 kB)
+   ---------------------------------------- 307.7/307.7 kB 3.2 MB/s eta 0:00:00
+Downloading pymongo-4.7.3-cp312-cp312-win_amd64.whl (484 kB)
+   ---------------------------------------- 484.2/484.2 kB 3.0 MB/s eta 0:00:00
+Installing collected packages: dnspython, PyMongo, Flask-PyMongo
+Successfully installed Flask-PyMongo-2.3.0 PyMongo-4.7.3 dnspython-2.6.1
+
+[notice] A new release of pip is available: 24.0 -> 24.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(venv) E:\Python-Training\Python-website\my_flask_app>
+
+
+
+
+<div id="contacts">
+            <h3>Contact Information</h3>
+            {% for contact in contacts %}
+                <p><strong>{{ contact.name }}</strong></p>
+                <p>Email: {{ contact.email }}</p>
+                <p>Phone: {{ contact.mobile }}</p>
+                <p>Message: {{ contact.message }}</p>
+                <hr>
+            {% endfor %}
+        </div>
+		
+		
+		 <div id="contacts" class="mt-4">
+            <h3>Contact Information</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for contact in contacts %}
+                        <tr>
+                          {{contact.name}}
+                            <td>{{ contact.name }}</td>
+                            <td>{{ contact.email }}</td>
+                            <td>{{ contact.mobile }}</td>
+                            <td>{{ contact.message }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+		
+		<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+FIREBASE DEPLOYMENT:
+====================
+npm install -g firebase-tools
+firebase login
+
+pip install Frozen-Flask
+freeze.py
+python freeze.py
+firebase init
+----------------------------------
+
+(venv) E:\Python-Training\Python-website\my_flask_app>firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Python-Training\Python-website\my_flask_app
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to
+confirm your choices. Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: testang-f4150 (testAng)
+i  Using project testang-f4150 (testAng)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? build
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+? Set up automatic builds and deploys with GitHub? No
++  Wrote build/404.html
+? File build/index.html already exists. Overwrite? No
+i  Skipping write of build/index.html
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+i  Writing gitignore file to .gitignore...
+
++  Firebase initialization complete!
+
+(venv) E:\Python-Training\Python-website\my_flask_app>
+----------------------------------
+
+(venv) E:\Python-Training\Python-website\my_flask_app>firebase deploy
+
+=== Deploying to 'testang-f4150'...
+
+i  deploying hosting
+i  hosting[testang-f4150]: beginning deploy...
+i  hosting[testang-f4150]: found 90 files in build
++  hosting[testang-f4150]: file upload complete
+i  hosting[testang-f4150]: finalizing version...
++  hosting[testang-f4150]: version finalized
+i  hosting[testang-f4150]: releasing new version...
++  hosting[testang-f4150]: release complete
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/testang-f4150/overview
+Hosting URL: https://testang-f4150.web.app
+
+(venv) E:\Python-Training\Python-website\my_flask_app>
+----------------------------------
+
+(venv) E:\Python-Training\Python-website\my_flask_app>python freeze.py
+E:\Python-Training\Python-website\my_flask_app\venv\Lib\site-packages\flask_frozen\__init__.py:179: MimetypeMismatchWarning: Filename extension of 'contactus' (type application/octet-stream) does not match Content-Type: text/html; charset=utf-8
+  return set(page.url for page in self.freeze_yield())
+E:\Python-Training\Python-website\my_flask_app\venv\Lib\site-packages\flask_frozen\__init__.py:179: MimetypeMismatchWarning: Filename extension of 'crud' (type application/octet-stream) does not match Content-Type: text/html; charset=utf-8
+  return set(page.url for page in self.freeze_yield())
+E:\Python-Training\Python-website\my_flask_app\venv\Lib\site-packages\flask_frozen\__init__.py:179: MissingURLGeneratorWarning: Nothing frozen for endpoints delete_contact, edit_contact. Did you forget a URL generator?
+  return set(page.url for page in self.freeze_yield())
+
+(venv) E:\Python-Training\Python-website\my_flask_app>
+==================================================================================
+from flask_frozen import Freezer
+from app import app, contactus_collection
+from flask import url_for  # Import url_for
+
+freezer = Freezer(app)
+
+@freezer.register_generator
+def url_generator():
+    yield url_for('index')
+    yield url_for('contactus')
+    yield url_for('crud')
+
+    # Yielding URLs for each contact for edit and delete pages
+    for contact in contactus_collection.find():
+        contact_id = str(contact['_id'])
+        yield url_for('edit_contact', contact_id=contact_id)
+        yield url_for('delete_contact', contact_id=contact_id)
+
+if __name__ == '__main__':
+    urls = list(freezer.all_urls())
+    print(f"URLs to be frozen: {urls}")
+    freezer.freeze()
+
+
+
+https://youtu.be/wiDjaj6hPi4
+https://youtu.be/wiDjaj6hPi4
+
+pip freeze >> requirements.txt
+
+https://youtu.be/1FdrJPt77GU
+https://youtu.be/1FdrJPt77GU
+
+https://zeet.co/r/cipher
+github account
+neetaa.gudimetlaa@gmail.com
+Narresh12578
+
+Verify your GitHub identity (narresh369)
+venkatdada369@gmail.com
+Narresh12578
+
+
+https://youtu.be/xTn4DXI8dyc
+https://youtu.be/xTn4DXI8dyc
+
+my-first-zeet-project-14no-master.63a4b571-1b87-4e59-a0d2-5120824ca3de.svc.cluster.local
+
+
+https://github.com/narresh369/Python-Flask-App
+https://github.com/narresh369/Python-Flask-App.git
+git remote add origin https://github.com/narresh369/Python-Flask-App.git

@@ -1,0 +1,52 @@
+.container {
+    margin-top: 20px;
+}
+
+/* .table {
+    margin-top: 20px;
+} */
+/* ====================== Flash Messages ====================================== */
+.flash-messages {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.flash {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.flash-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.flash-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+/* ============================================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #f1d9d9!important;
+}
+
+th {
+    background-color: #f2f2f2;
+}
